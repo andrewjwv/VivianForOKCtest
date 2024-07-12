@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --backgroundcolor:255, 255, 255;
+    --color3:247, 248, 250;
+    --currentpage: 239, 51, 91;
+    --navlinkcolor: 0, 0, 140;
+    --secondaycolor: 239, 51, 91;
+    --navbuttonhover: 219,51,91;
+}
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(var(--backgroundcolor), 1);
+    font-family: "Montserrat";
+}
+img {
+    max-width: 90%;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line */
+    flex-wrap: wrap; /* Add this line */
+}
+
+.container > div {
+    width: 100%; /* Change this line */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+}
+
+/* Add more styles as needed */
+/*navbar*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: rgba(var(--navlinkcolor), 1);
+    text-emphasis: bold;
+    font-weight: 600;
+    padding-left: 20px;
+}
+nav button {
+   padding-left: 10px;
+   width: 100%;
+
+}
+nav a:hover {
+    background-clip: content-box;
+    color: rgba(var(--secondaycolor), 1);
+    text-decoration: underline;
+}
+
+nav a#currentpage {
+    color: rgba(var(--currentpage), 1);
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav ul li {
+    margin-right: 5px;
+}
+button{
+    background-color: rgba(var(--secondaycolor), 1);
+    border: 1px solid rgba(255,255,255, 1);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: auto;
+}
+button.donate {
+    background-color: rgba(var(--navlinkcolor), 1)
+}
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0 / 20%) 0 0);
+}
+
+#calltoaction {
+    background-color: rgba(var(--color3), 1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#calltoactiontext {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: rgba(var(--navlinkcolor), 1);
+}
+#calltoactiontext #winwithvivian {
+    font-weight: 800;
+    font-size: 88px;
+    align-items: normal;
+    line-height: 105.6px;
+    text-emphasis: bold;
+}
+#calltoactiontext .smallparagraph {
+    font-size: small;
+    text-align: left;
+} 
+#calltoactionbuttons {
+    flex-direction: row;
+}
+
+.smallred {
+    color: red;
+    font-size:19.2px;
+    font-weight: 600;
+    line-height: 23.4px;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#about img {
+    width: 50%;
+    height: auto;
+}
+#abouttextandpoints {
+    flex-direction: column;
+    width: 50%;
+}
+#aboutpoints{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+}
