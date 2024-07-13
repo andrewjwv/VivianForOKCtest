@@ -147,11 +147,13 @@ button:hover {
 #about{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 #about img {
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
     height: auto;
 }
 #abouttextandpoints {
@@ -161,7 +163,12 @@ button:hover {
 #aboutpoints{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: centers;
     align-items: center;
     width:50%;
+}
+
+#points {
+    justify-content: space-around;
+    align-items: center;
 }
