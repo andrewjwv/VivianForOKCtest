@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 :root {
     --backgroundcolor:255, 255, 255;
     --color3:247, 248, 250;
@@ -11,6 +11,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red !important; */
 }
 
 body {
@@ -22,6 +24,10 @@ body {
 }
 img {
     max-width: 90%;
+    height: auto;
+}
+img#checkmark {
+    width: 70px;
     height: auto;
 }
 .container {
