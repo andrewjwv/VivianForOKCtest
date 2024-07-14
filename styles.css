@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 :root {
     --backgroundcolor:255, 255, 255;
-    --color3:247, 248, 250;
+    --color3:237, 238, 255;
     --currentpage: 239, 51, 91;
-    --navlinkcolor: 0, 0, 140;
-    --secondaycolor: 239, 51, 91;
+    --navycolor: 0, 0, 140;
+    --secondaycolor: 239, 51, 101;
     --navbuttonhover: 219,51,91;
 }
 /* Reset default browser styles */
+html { scroll-behavior: smooth;}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px solid red !important;*/ 
+    /*outline: 1px solid red !important;*/
 }
 
 body {
@@ -27,7 +28,7 @@ img {
     height: auto;
 }
 img#checkmark {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 .container {
@@ -68,7 +69,7 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: rgba(var(--navlinkcolor), 1);
+    color: rgba(var(--navycolor), 1);
     text-emphasis: bold;
     font-weight: 600;
     padding-left: 20px;
@@ -105,7 +106,7 @@ button{
     width: auto;
 }
 button.donate {
-    background-color: rgba(var(--navlinkcolor), 1)
+    background-color: rgba(var(--navycolor), 1)
 }
 button:hover {
     background-image: linear-gradient(rgb(0 0 0 / 20%) 0 0);
@@ -115,22 +116,29 @@ button:hover {
     background-color: rgba(var(--color3), 1);
     padding: 20px;
     text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height:50%;
 }
 #calltoactiontext {
     display: flex;
     flex-direction: column;
     text-align: left;
-    color: rgba(var(--navlinkcolor), 1);
+    color: rgba(var(--navycolor), 1);
+    padding:20px;
+    width: 90%;
+}
+#calltoaction img {
+    max-width: 90%;
+    max-height: 1000px;
 }
 #calltoactiontext #winwithvivian {
     font-weight: 800;
     font-size: 88px;
-    align-items: normal;
-    line-height: 105.6px;
-    text-emphasis: bold;
+
+    text-emphasis: bold;    line-height: 1;
 }
 #calltoactiontext .smallparagraph {
     font-size: small;
@@ -176,4 +184,21 @@ button:hover {
 
 #points {
     align-items: center;
+}
+
+.blueheader{
+    /*styleName: H2;*/
+    font-family: Montserrat;
+    font-size: 67.2px;
+    font-weight: 800;
+    line-height: 80.64px;
+    text-align: left;
+    color: rgba(var(--navycolor), 1)
+}
+#donatesct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }

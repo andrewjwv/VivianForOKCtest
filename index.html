@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+    
     <link rel="icon" href="vivian-jaber-logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,10 +16,13 @@
                 <li><a href="page.html">Page</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#donatesct">Donate</a></li>
             </ul>
-            <div id="assist"> 
-                <button class="joincampaign">Become a Volunteer</button>
-                <button class="donate">Donate Now</button>
+            <div id="assist">
+                <form method="get" action="#donate">
+                    <button class="joincampaign">Become a Volunteer</button>
+                    <button class="donate" type="submit">Donate Now</button>
+                </form>
             </div>
         </nav>
     </header>
@@ -73,6 +77,9 @@
                 <p class="smallred">Concerns and Issues</p>
             </div>
         </div>
+        <section id="donatesct">
+            <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/vivian-for-okc?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important" allow="payment"></iframe>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Paid for by Vivian For OKC</p>
