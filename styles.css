@@ -215,16 +215,20 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: space-evenly;
     padding: 20px;
+    padding-top: 10px;
     background-color: rgba(var(--navycolor), 1);
     color: white;
 }
 #FooterColumns {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
+    height: 100%;
+
 }
 #footer img {
     background-color: white;
@@ -237,13 +241,21 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    justify-content:space-between;
+    text-align: left;
 }
 footer hr {
 
     border: 1px solid white;
 }
+footer a:hover {
+    background-clip: content-box;
+    color: rgba(var(--secondaycolor), 1);
+    text-decoration: underline;
+}
 footer a {
+    padding: 5px;
     color: white;
     font-weight: 700;
     font-size: 10px;
@@ -257,5 +269,6 @@ footer a {
 }
 #copyright p {
     font-size: 10px;
-    
+    width: 100%;
+    justify-content: center;
 }
