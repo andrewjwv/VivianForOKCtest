@@ -58,6 +58,7 @@ p {
 
 a {
     color: #007bff;
+    cursor:pointer;
 }
 
 /* Add more styles as needed */
@@ -86,6 +87,7 @@ nav a {
 nav button {
    padding-left: 10px;
    width: 100%;
+   cursor:pointer;
 
 }
 nav a:hover {
@@ -214,6 +216,56 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: rgba(var(--color3), 1);
+}
+#ConcernsIssues {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px;
+    gap: 0px
+}
+#ConcernsIssues button {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    background-color: rgba(var(--color3), 1);
+    color: rgba(var(--navycolor), 1);
+    border: 1px solid rgba(var(--navycolor), 1);
+    border-radius: 10px;
+
+}
+.active {
+    color: rgba(var(--navbuttonhover), 1);
+}
+#ConcernsIssues .DropDownText {
+    text-align: left;
+    background-color: rgba(var(--color3), 1);
+    color: rgba(var(--navycolor), 1);
+    border: 1px solid rgba(var(--navycolor), 1);
+    border-radius: 10px;
+    padding:0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.DropDownHeader:after {
+    content: image-set("plus.png"); /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: rgba(var(--secondaycolor), 1);
+    float: right;
+    margin-left: 5px;
+}
+a.DropDownHeader:active{
+    color: rgba(var(--navbuttonhover), 1);
+}  
+  .active:after {
+    content: image-set("minus.png"); /* Unicode character for "minus" sign (-) */
+    color:red;
+}
+#ConcernsIssues button:hover {
+    color: rgba(var(--navbuttonhover), 1);
 }
 #missionvisionpoints {
     display: flex;
