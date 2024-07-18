@@ -214,17 +214,17 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 20px;
     background-color: rgba(var(--color3), 1);
+    text-align: top;
 }
 #ConcernsIssues {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
-    padding: 0px;
-    gap: 0px
+    width: 40%;
+    height: 100%;
 }
 #ConcernsIssues button {
     width: 100%;
@@ -236,19 +236,16 @@ button:hover {
     border-radius: 10px;
 
 }
-.active {
-    color: rgba(var(--navbuttonhover), 1);
-}
-#ConcernsIssues .DropDownText {
+.DropDownText {
     text-align: left;
     background-color: rgba(var(--color3), 1);
     color: rgba(var(--navycolor), 1);
-    border: 1px solid rgba(var(--navycolor), 1);
     border-radius: 10px;
-    padding:0px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    display: inline-block;
+    padding:10px;
 }
 .DropDownHeader:after {
     content: image-set("plus.png"); /* Unicode character for "plus" sign (+) */
@@ -257,12 +254,8 @@ button:hover {
     float: right;
     margin-left: 5px;
 }
-a.DropDownHeader:active{
-    color: rgba(var(--navbuttonhover), 1);
-}  
   .active:after {
     content: image-set("minus.png"); /* Unicode character for "minus" sign (-) */
-    color:red;
 }
 #ConcernsIssues button:hover {
     color: rgba(var(--navbuttonhover), 1);

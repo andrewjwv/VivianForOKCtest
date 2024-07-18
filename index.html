@@ -89,36 +89,35 @@
             <div id="ConcernsIssues">
                 <p class="smallred">Concerns and Issues</p>
                 <p class="blueheader">Top Issues That Voters Consider Important</p>
-                <button class="DropDownHeader">Medical Care For All</button>
-                <p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                <button class="DropDownHeader">Housing As Human Right</button>
-                <p class="DropDownText smallparagraph">Housing is a fundamental human right essential to the dignity, safety and well being of our community. In OKC, our unhoused population is the most vulnerable members of our community; our vets, our youth, those experiencing mental illness, and our elderly population. Providing people with affordable housing provides a stable foundation for our community to thrive, supporting their access to education, employment and healthcare. Without secure housing, individuals face barriers that continue the cycle of poverty.</p>
-                <button class="DropDownHeader">Real Public Safety</button>
-                <p class="DropDownText smallparagraph">Obtaining real public safety in our community goes beyond traditional law enforcement. Instead, we must address the root causes of crime through comprehensive support and resources. Offering after school programs provides safe spaces for youth, keeping them engaged and out of trouble. Access to mental health resources helps individuals cope with trauma and stress, reducing the likelihood of crime. Addressing food insecurity ensures that basic needs are met and people aren’t acting in desperation. We need to take a community first approach to making OKC a safer city.</p>
-                <button class="DropDownHeader">Handling Covid-19</button>
-                <p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                <button class="DropDownHeader">Elevate Public Education</button>
-                <p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
+                <button class="DropDownHeader">Medical Care For All</button><!--
+             --><p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
+                <button class="DropDownHeader">Housing As Human Right</button><!--
+            --><p class="DropDownText smallparagraph">Housing is a fundamental human right essential to the dignity, safety and well being of our community. In OKC, our unhoused population is the most vulnerable members of our community; our vets, our youth, those experiencing mental illness, and our elderly population. Providing people with affordable housing provides a stable foundation for our community to thrive, supporting their access to education, employment and healthcare. Without secure housing, individuals face barriers that continue the cycle of poverty.</p>
+                <button class="DropDownHeader">Real Public Safety</button><!--
+            --><p class="DropDownText smallparagraph">Obtaining real public safety in our community goes beyond traditional law enforcement. Instead, we must address the root causes of crime through comprehensive support and resources. Offering after school programs provides safe spaces for youth, keeping them engaged and out of trouble. Access to mental health resources helps individuals cope with trauma and stress, reducing the likelihood of crime. Addressing food insecurity ensures that basic needs are met and people aren’t acting in desperation. We need to take a community first approach to making OKC a safer city.</p>
+                <button class="DropDownHeader">Handling Covid-19</button><!--
+            --><p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
+                <button class="DropDownHeader">Elevate Public Education</button><!--
+            --><p class="DropDownText smallparagraph">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
             </div>
             <script>
                 var coll = document.getElementsByClassName("DropDownHeader");
                 var i;
                 for (i = 0; i < coll.length; i++) {
-                    var box = coll[i];
                     coll[i].addEventListener("click", function() {
-                        box.style.color = 'red';
                         this.classList.toggle("active");
                         var content = this.nextElementSibling;
                         if (content.style.maxHeight){
-                          content.style.maxHeight = null;
+                            content.style.maxHeight = null;
+                            this.style.color = "#00008C";
+                            content.style.border = "none";
                         } else {
-                          content.style.maxHeight = content.scrollHeight + "px";
+                            content.style.maxHeight = content.scrollHeight + "px";
+                            this.style.color = "#EF3D65";
+                            content.style.border = "1px solid rgba(0, 0, 140, 1)";
                         }
                     });
                 }
-                coll[i].addEventListener('click', function onClick(event) {
-                    box.style.color = 'black';
-                });
             </script>
         </div>
         <section id="donatesct">
