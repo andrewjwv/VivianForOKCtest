@@ -52,8 +52,6 @@ img#checkmark {
 
 p {
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
 }
 
 a {
@@ -125,7 +123,7 @@ button:hover {
 
 #calltoaction {
     background-color: rgba(var(--color3), 1);
-    padding: 20px;
+    padding-left: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -140,14 +138,19 @@ button:hover {
     text-align: left;
     color: rgba(var(--navycolor), 1);
     padding:10px;
-    width: 40%;
+    width: 100%;
 }
 #calltoaction img {
     max-height: 700px;
 }
 #calltoactionpicture{
-    width:40%;
-    padding: 5px;
+    width:120%;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 20px;
+    height: 100%;
+    text-align: right;
+
 }
 #calltoactiontext #winwithvivian {
     font-weight: 800;
@@ -156,8 +159,8 @@ button:hover {
     text-emphasis: bold;    line-height: 1;
 }
 #calltoactiontext .smallparagraph {
-    font-size: small;
     text-align: left;
+    color:black;
 } 
 #calltoactionbuttons {
     flex-direction: row;
@@ -169,24 +172,37 @@ button:hover {
     font-weight: 600;
     line-height: 23.4px;
 }
+.smallparagraph{
+    font-size:19.2px;
+    font-weight: 600;
+    line-height: 23.4px;
+}
 #about{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+}
+#about .smallred{
+    padding-bottom: 0px;
 }
 #about img {
     justify-content: center;
     align-items: center;
-    width: 45%;
-    height: auto;
-
+    height: 100%;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 700px;
 }
 #abouttextandpoints {
     flex-direction: column;
     width: 50%;
     align-items: center;
+    padding-top: 20px;
     
+}
+#abouttext{
+    padding-top:0px;
 }
 #aboutpoints{
     display: flex;
@@ -195,10 +211,18 @@ button:hover {
     align-items: center;
     width:auto;
     padding: 40px;
+    font-size:19.2px;
+    font-weight: 600;
+    line-height: 23.4px;
+    text-align: center;
 }
 
 #points {
     align-items: center;
+    gap:15px;
+    padding-right: 10px;
+    width: 40px;
+    text-align: center;
 }
 
 .blueheader{
@@ -213,20 +237,20 @@ button:hover {
 #mvconcernissues {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: rgba(var(--color3), 1);
-    text-align: top;
+    text-align: left;
     width: 100%;
 }
 #ConcernsIssues {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;
     width: 80%;
     height: 100%;
     padding: 20px;
+    text-align: left;
 }
 #ConcernsIssues button {
     width: 100%;
@@ -236,12 +260,15 @@ button:hover {
     color: rgba(var(--navycolor), 1);
     border: 1px solid rgba(var(--navycolor), 1);
     border-radius: 10px;
+    font-size:19.2px;
+    font-weight: 600;
+    line-height: 23.4px;   
 
 }
 .DropDownText {
     text-align: left;
     background-color: rgba(var(--color3), 1);
-    color: rgba(var(--navycolor), 1);
+    color: black;
     border-radius: 10px;
     max-height: 0;
     overflow: hidden;
@@ -264,6 +291,7 @@ button:hover {
 #missionandvision {
     width: 80%;
     padding: 20px;
+    display:none;
 }
 #missionvisionpoints {
     display: flex;
