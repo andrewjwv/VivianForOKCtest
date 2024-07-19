@@ -217,14 +217,16 @@ button:hover {
     padding: 20px;
     background-color: rgba(var(--color3), 1);
     text-align: top;
+    width: 100%;
 }
 #ConcernsIssues {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    width: 40%;
+    width: 80%;
     height: 100%;
+    padding: 20px;
 }
 #ConcernsIssues button {
     width: 100%;
@@ -244,7 +246,7 @@ button:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    display: inline-block;
+    display: none;
 }
 .DropDownHeader:after {
     content: image-set("plus.png"); /* Unicode character for "plus" sign (+) */
@@ -258,6 +260,10 @@ button:hover {
 }
 #ConcernsIssues button:hover {
     color: rgba(var(--navbuttonhover), 1);
+}
+#missionandvision {
+    width: 80%;
+    padding: 20px;
 }
 #missionvisionpoints {
     display: flex;
@@ -386,4 +392,7 @@ footer a {
 #socialmedia a {
     height: 25px;
     width: 25px;
+}
+#FooterColumns #Issues {
+    display:none;
 }
