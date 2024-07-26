@@ -19,10 +19,6 @@ async function sendVolunteerEmail() {
         console.error("There was an error submitting the form", error);
     }
 }
-function showLoader() {
-    document.getElementById("volunteerform").style.display = "block";
-    document.getElementById("emailForm").style.display = "none";
-}
 async function sendContactEmail() {
     const data = {
         name: document.getElementById("name").value,
