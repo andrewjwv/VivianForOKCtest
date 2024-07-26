@@ -6,7 +6,7 @@ async function sendVolunteerEmail() {
         message: document.getElementById("message").value
     };
     try {
-        showLoader();
+        showLoader("volunteerform");
         const response = await fetch("https://testvivi4okx.azurewebsites.net/api/SendEmail", {
             method: "POST",
             body: JSON.stringify(data),
@@ -32,7 +32,7 @@ async function sendContactEmail() {
         message: document.getElementById("message").value
     };
     try {
-        showLoader();
+        showLoader("contactform");
         const response = await fetch("https://testvivi4okx.azurewebsites.net/api/SendEmail", {
             method: "POST",
             body: JSON.stringify(data),
@@ -46,7 +46,7 @@ async function sendContactEmail() {
         console.error("There was an error submitting the form", error);
     }
 }
-function showLoader() {
-    document.getElementById("contactform").style.display = "block";
+function showLoader(formname) {
+    document.getElementById(formname).style.display = "block";
     document.getElementById("emailForm").style.display = "none";
 }
