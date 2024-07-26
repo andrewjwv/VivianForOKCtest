@@ -14,7 +14,7 @@ async function sendEmail() {
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
-        setTimeout(location.reload(), 5000);
+//        setTimeout(location.reload(), 5000);
     } catch (error) {
         console.error("There was an error submitting the form", error);
     }
@@ -22,5 +22,5 @@ async function sendEmail() {
 }
 function showLoader() {
     document.getElementById("volunteerform").style.display = "block";
-    document.getElementById("emailForm").style.display = "none";
+//    document.getElementById("emailForm").style.display = "none";
 }
