@@ -115,7 +115,7 @@ button{
     width: auto;
 }
 button.donate {
-    background-color: rgba(var(--navycolor), 1)
+    background-color: rgba(var(--navycolor), 1);
 }
 button:hover {
     background-image: linear-gradient(rgb(0 0 0 / 20%) 0 0);
@@ -147,10 +147,8 @@ button:hover {
     width:120%;
     padding-top: 0px;
     padding-left: 5px;
-    padding-right: 20px;
     height: 100%;
     text-align: right;
-
 }
 #calltoactiontext #winwithvivian {
     font-weight: 800;
@@ -180,25 +178,27 @@ button:hover {
 #about{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    height: 100%;
 }
 #about .smallred{
     padding-bottom: 0px;
 }
-#about img {
-    justify-content: center;
-    align-items: center;
+#aboutpicture{
     height: 100%;
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-height: 700px;
+    width: 40%;
+    text-align: left;
+
+}
+#about img {
+    height: 100%;
+/*  max-height: 800px;-->*/
 }
 #abouttextandpoints {
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     align-items: center;
     padding-top: 20px;
+    height: 40%;
     
 }
 #abouttext{
@@ -209,19 +209,15 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width:auto;
-    padding: 40px;
     font-size:19.2px;
     font-weight: 600;
     line-height: 23.4px;
-    text-align: center;
 }
 
 #points {
     align-items: center;
     gap:15px;
     padding-right: 10px;
-    width: 40px;
     text-align: center;
 }
 
@@ -232,23 +228,37 @@ button:hover {
     font-weight: 800;
     line-height: 80.64px;
     text-align: left;
-    color: rgba(var(--navycolor), 1)
+    color: rgba(var(--navycolor), 1);
+}
+#concernspicture {
+    display: flex;
+    text-align: right;
+    padding-right: 0px;
+    width:40%;
+    height: 100%;
+    justify-content: right;
+}
+#concernspicture img {
+    height: 100%;
+    max-height: 800px;
+    text-align: right;
+    padding-right: 0px;
+    justify-content: right;
 }
 #mvconcernissues {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-left: 20px;
-    padding-right: 20px;
     background-color: rgba(var(--color3), 1);
-    text-align: left;
     width: 100%;
+    gap:0px;
 }
 #ConcernsIssues {
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    width: 80%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
     padding: 20px;
     text-align: left;
 }
@@ -262,8 +272,7 @@ button:hover {
     border-radius: 10px;
     font-size:19.2px;
     font-weight: 600;
-    line-height: 23.4px;   
-
+    line-height: 23.4px;
 }
 .DropDownText {
     text-align: left;
@@ -288,7 +297,7 @@ button:hover {
 #ConcernsIssues button:hover {
     color: rgba(var(--navbuttonhover), 1);
 }
-#missionandvision {
+/*#missionandvision {
     width: 80%;
     padding: 20px;
     display:none;
@@ -335,7 +344,7 @@ button:hover {
     line-height: 48.24px;
     text-align: left;
     color: white;
-}
+}*/
 #donatesct {
     display: flex;
     flex-direction: row;
