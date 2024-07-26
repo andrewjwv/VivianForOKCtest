@@ -1,6 +1,6 @@
 async function sendVolunteerEmail() {
     const data = {
-        type: "volunteer",
+        etype: "volunteer",
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
@@ -26,7 +26,7 @@ function showLoader() {
 }
 async function sendContactEmail() {
     const data = {
-        type: "contact",
+        etype: "contact",
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
