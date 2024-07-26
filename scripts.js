@@ -18,7 +18,7 @@ async function sendEmail() {
     } catch (error) {
         console.error("There was an error submitting the form", error);
     }
-    console.log(JSON.stringify(data))
+    console.log(response)
 }
 function showLoader() {
     document.getElementById("volunteerform").style.display = "block";
