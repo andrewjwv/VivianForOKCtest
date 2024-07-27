@@ -43,6 +43,7 @@ img#checkmark {
     justify-content: space-between;
     align-items: center; /* Add this line */
     flex-wrap: wrap; /* Add this line */
+    padding-top: 0px;
 }
 
 .container > div {
@@ -66,6 +67,7 @@ header {
     position: sticky;
     width:100%;
     background-color: white;
+    padding-bottom: 0px;
 }
 nav {
     display: flex;
