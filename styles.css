@@ -149,6 +149,7 @@ button:hover {
     color: rgba(var(--navycolor), 1);
     padding:10px;
     width: 40%;
+    gap: 20px;
 }
 
 #calltoactionpicture{
@@ -163,8 +164,8 @@ button:hover {
 #calltoactiontext #winwithvivian {
     font-weight: 800;
     font-size: 78px;
-
-    text-emphasis: bold;    line-height: 1;
+    text-emphasis: bold;    
+    line-height: 1;
 }
 #calltoactiontext .smallparagraph {
     text-align: left;
@@ -172,6 +173,24 @@ button:hover {
 } 
 #calltoactionbuttons {
     flex-direction: row;
+    justify-content: space-evenly;
+}
+#calltoactionbuttons button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19.2px;
+    font-weight: 600;
+    line-height: 23.4px;
+    cursor: pointer;
+}
+#calltoactionform {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
 }
 
 .smallred {
@@ -442,6 +461,10 @@ button:hover {
     width: 40%;
     background-color: rgba(var(--secondaycolor), 1);
     height: 100%;
+    font-size: 19.2px;
+    font-weight: 700;
+    line-height: 23.4px;
+    text-align: left;
 }
 
 #footer {
