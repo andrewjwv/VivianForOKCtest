@@ -411,7 +411,8 @@ button:hover {
     gap:0px;
     background-color: rgba(var(--secondaycolor), 1);
     border-radius: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 #donatetxt {
     width: 40%;
