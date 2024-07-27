@@ -333,6 +333,7 @@ button:hover {
     width: 100%;
     color: white;
     gap: 100px;
+    border-radius: 20px;
 }
 #volunteertxt {
     width: 60%;
