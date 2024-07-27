@@ -9,26 +9,30 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
-            <div id="donatebtn">
-                <button class="donate" type="submit">Donate Now</button>
+            <div id="navimage">
+                <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
             </div>
-            <ul>
-                <li><a href="index.html" id="currentpage">Home</a></li>
-                <li><a href="about.html">About</a></li><!--
-                <li><a href="event.html">Event</a></li>
-                <li><a href="page.html">Page</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            --><li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div id="assist">
-                <form method="get" action="#donatesct">
-                    <button class="joincampaign">Become a Volunteer</button>
-                </form>
+            <div id="navbtns">
+                <div id="donatebtn">
+                    <button class="donate" type="submit">Donate Now</button>
+                </div>
+                <ul>
+                    <li><a href="index.html" id="currentpage">Home</a></li>
+                    <li><a href="about.html">About</a></li><!--
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="page.html">Page</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                --><li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="assist">
+                    <form method="get" action="#donatesct">
+                        <button class="joincampaign">Become a Volunteer</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <div id="calltoaction">
             <div id="calltoactiontext">
                 <p class="smallred" id="voteforfuture">Vote For Progress</p>
@@ -131,11 +135,12 @@
                             content.style.maxHeight = null;
                             this.style.color = "#00008C";
                             content.style.border = "none";
+                            content.style.border = "none";
                             content.style.padding = "0px";
                             content.style.display = "none";
                         } else {
                             content.style.display = "inline-block";
-                            content.style.padding = "10px";
+                            content.style.padding = "30px";
                             content.style.maxHeight = content.scrollHeight + "px";
                             this.style.color = "#EF3D65";
                             content.style.border = "1px solid rgba(0, 0, 140, 1)";
@@ -187,33 +192,35 @@
         <div id="footer">
             <div id="FooterColumns">
                 <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
-                <div id="QuickLinks">
-                    <p class="smallred">Quick Links</p>
-                    <hr>
-                    <ul>
-                        <li><a href="about.html">About Me</a></li><!--
-                        <li><a href="team.html">Our Team</a></li>
-                    --><li><a href="issues.html">Issues</a></li><!--
-                        <li><a href="bio.html">Biography</a></li>
-                    --></ul>
-                </div>
-                <div id="Issues">
-                    <p class="smallred">Issues</p>
-                    <hr>
-                    <ul>
-                        <li><a href="housing.html">Housing As Human Right</a></li>
-                        <li><a href="publicsafety.html">Public Safety</a></li>
-                        <li><a href="covid.html">Investment in Infrastructure</a></li>
-                        <li><a href="education.html">Childcare</a></li>
-                </div>
-                <div id="Contact">
-                    <p class="smallred">Contact Us</p>
-                    <hr>
-                    <ul><!--
-                        <li> Address</li>
-                    --><li> contact@vivianforokc.com</li><!--
-                        <li> 405-555-5555</li>
-                    --></ul>
+                <div id="FooterText">
+                    <div id="QuickLinks">
+                        <p class="smallred">Quick Links</p>
+                        <hr>
+                        <ul>
+                            <li><a href="about.html">About Me</a></li><!--
+                            <li><a href="team.html">Our Team</a></li>
+                        --><li><a href="issues.html">Issues</a></li><!--
+                            <li><a href="bio.html">Biography</a></li>
+                        --></ul>
+                    </div>
+                    <div id="Issues">
+                        <p class="smallred">Issues</p>
+                        <hr>
+                        <ul>
+                            <li><a href="housing.html">Housing As Human Right</a></li>
+                            <li><a href="publicsafety.html">Public Safety</a></li>
+                            <li><a href="covid.html">Investment in Infrastructure</a></li>
+                            <li><a href="education.html">Childcare</a></li>
+                    </div>
+                    <div id="Contact">
+                        <p class="smallred">Contact Us</p>
+                        <hr>
+                        <ul><!--
+                            <li> Address</li>
+                        --><li> contact@vivianforokc.com</li><!--
+                            <li> 405-555-5555</li>
+                        --></ul>
+                    </div>
                 </div>
             </div>
             <div id="copyright">
