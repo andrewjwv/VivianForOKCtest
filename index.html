@@ -20,11 +20,11 @@
                 </div>
                 <ul>
                     <li><a href="index.html" id="currentpage">Home</a></li>
-                    <li><a href="about.html">About</a></li><!--
+                    <li><a href="#about">About</a></li><!--
                     <li><a href="event.html">Event</a></li>
                     <li><a href="page.html">Page</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                --><li><a href="contact.html">Contact</a></li>
+                --><li><a href="#volunteernow">Contact</a></li>
                 </ul>
                 <div id="assist">
                     <form method="get" action="#volunteernow">
@@ -161,9 +161,11 @@
                 </div>
                 <div id="volunteerform">
                     <form id="emailform" onsubmit="sendVolunteerEmail();return false;">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <input type="text" id="message" name="message" placeholder="Zip Code" required>
+                        <div id="inputs">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="text" id="message" name="message" placeholder="Zip Code" required>
+                        </div>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
