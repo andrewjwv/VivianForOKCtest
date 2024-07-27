@@ -581,7 +581,7 @@ footer a {
 #FooterColumns #Issues {
     display:none;
 }
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
 
     body{
         max-width: 900px;
