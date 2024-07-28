@@ -44,5 +44,5 @@ async function sendContactEmail() {
 }
 function showLoader(formname) {
     document.getElementById(formname).style.display = "block";
-    document.getElementById("emailForm").style.display = "none";
+    document.getElementById("emailform").style.display = "none";
 }
