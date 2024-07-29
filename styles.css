@@ -60,6 +60,7 @@ a {
 /* Add more styles as needed */
 /*navbar*/
 header {
+    padding-top: 10px;
     top: 0;
     position: sticky;
     background-color: white;
@@ -890,6 +891,12 @@ footer a {
     }
     nav button {
         font-size: 12px;
+    }
+    #navbtns {
+        gap: 10px;
+    }
+    nav ul {
+        gap: 10px;
     }
     #concernspicture {
         width: 100%;
