@@ -4,6 +4,9 @@
     
     <link rel="icon" href="vivian-jaber-logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Vivian Jaber for OKC</title>
     <script src="scripts.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
@@ -13,7 +16,7 @@
             <div id="navimage">
                 <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
             </div>
-            <div id="navbtns">
+            <div id="navbtns" class="topnav">
                 <div id="donatebtn">
                     <form method="get" action="#donatesct">
                         <button class="donate" type="submit">Donate Now</button>
@@ -28,14 +31,14 @@
                 --><li><a href="#volunteernow">Contact</a></li>
                 </ul>
                 <div id="assist">
-                    <form method="get" action="#volunteernow">
+                    <form method="get" id="navvolunbtn" action="#volunteernow">
                         <button class="joincampaign">Become a Volunteer</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main>
         <div id="calltoaction">
             <div id="calltoactiontext">
                 <p class="smallred" id="voteforfuture">Vote For Progress</p>
@@ -170,8 +173,8 @@
                             <input type="text" id="name" name="name" placeholder="Name" required>
                             <input type="email" id="email" name="email" placeholder="Email" required>
                             <input type="text" id="message" name="message" placeholder="Zip Code" required>
+                            <button type="submit">Submit</button>
                         </div>
-                        <button type="submit">Submit</button>
                     </form>
                 </div>
 <!--                <script>
