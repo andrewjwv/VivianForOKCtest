@@ -3,7 +3,8 @@ async function sendVolunteerEmail() {
         etype: "volunteer",
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        message: document.getElementById("message").value
+        message: document.getElementById("message").value,
+        phone: document.getElementById("phone").value
     };
     try {
         showLoader("volunteerform");
