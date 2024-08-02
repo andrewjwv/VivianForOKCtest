@@ -9,47 +9,41 @@
     <title>Vivian Jaber for OKC Ward 1</title>
     <script type="application/ld+json">
         {
-          "@context" : "https://schema.org",
-          "@type" : "WebSite",
-          "name" : "Vivian Jaber for OKC Ward 1",
-          "url" : "https://vivianforokc.com/"
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "Vivian Jaber for OKC Ward 1",
+            "url" : "https://vivianforokc.com/"
         }
-      </script>
+    </script>
     <script src="scripts.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="google-site-verification" content="QAdhr9gCqTO2-LdzNZmEIMq-FNPM_l2IJPlEKTVcHi0" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="navimage">
-                <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
-            </div>
-            <div id="navbtns" class="topnav">
-                <div id="donatebtn">
-                    <form method="get" action="#donatesct">
-                        <button class="donate" type="submit">Donate Now</button>
-                    </form>
-                </div>
-                <ul>
-                    <li><a href="index.html" id="currentpage">Home</a></li>
-                    <li><a href="#about">About</a></li><!--
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="page.html">Page</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                --><li><a href="#volunteernow">Contact</a></li>
-                </ul>
-                <div id="assist">
-                    <form method="get" id="navvolunbtn" action="#volunteernow">
-                        <button class="joincampaign">Become a Volunteer</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <header id="navbar">
+        <div id="navimage">
+            <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+        </div>
+        <div id="navbtns">
+            <form method="get" id="donatebtn" action="#donatesct">
+                <button class="donate" type="submit">Donate Now</button>
+            </form>
+            <ul>
+                <li><a href="index.html" id="currentpage">Home</a></li>
+                <li><a href="#about">About</a></li><!--
+                <li><a href="event.html">Event</a></li>
+                <li><a href="page.html">Page</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            --><li><a href="#volunteernow">Contact</a></li>
+            </ul>
+            <form method="get" id="navvolunbtn" action="#volunteernow">
+                <button class="joincampaign">Become a Volunteer</button>
+            </form>
+        </div>
     </header>
     <main>
-        <div id="calltoaction">
-            <div id="calltoactiontext">
+        <div id="calltoaction" class="section">
+            <div id="calltoactiontext" class="subsection">
                 <p class="smallred" id="voteforfuture">Vote For Progress</p>
                 <p id="winwithvivian">Win with Vivian 
                     <img id="checkmark" src="checkmark.png" alt="">
@@ -62,15 +56,15 @@
                     </form>
                 </div>
             </div>
-            <div id="calltoactionpicture">
+            <div id="calltoactionpicture" class="subsection">
                 <img src="vivian-jaber-photo4.jpg" >
             </div>
         </div>
-        <div id="about">
-            <div id="aboutpicture">
+        <div id="about" class="section">
+            <div id="aboutpicture" class="subsection">
                 <img src="vivian-jaber-photo1.jpg" >
             </div>
-            <div id="abouttextandpoints">    
+            <div id="abouttextandpoints" class="subsection">    
                 <div id ="abouttext">
                     <p class="smallred">About Vivian</p>
                     <p class="blueheader">Leadership.</p> <p class="blueheader">Experience.</p> <p class="blueheader">Vision.</p>
@@ -92,24 +86,7 @@
                 </div>
             </div>
         </div>
-        <div id="mvconcernissues">
-            <!--<div id="missionandvision">
-                <p class="smallred">Our Mission</p>
-                <p class="blueheader">A Better World Is Possible</p>
-                <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                <div id="missionvisionpoints">
-                    <div class="missionpoints roundedbox">
-                        <p class="miniheader">Mission</p>
-                        <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                        <a class="arrowtext" href="about.html">Learn More <img src="redarrow.png"></a>
-                    </div>
-                    <div class="visionpoints roundedbox">
-                        <p class="miniheader">Vision</p>
-                        <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                        <a class="arrowtext" href="about.html">Learn More<img src="whitearrow.png"></a>
-                    </div>
-                </div>
-            </div>-->
+        <div id="concernissues" class="section">
             <div id="ConcernsIssues">
                 <div id="concernsheadertxt">
                     <p class="smallred">Priorities and Issues</p>
