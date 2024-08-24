@@ -7,6 +7,21 @@
     --secondaycolor: 239, 51, 91;
     --navbuttonhover: 219,51,91;
 }
+html { scroll-behavior: smooth;}
+img {
+    border-radius: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
 #aboutpicture img {
     display: none;
 }
@@ -23,20 +38,48 @@
     width: 200px;
     max-width: fit-content;
 }
-html { scroll-behavior: smooth;}
+header img {
+    width: 90px;
+    height: 57px;
+}
+.points img {
+    height: 90px;
+    width: 90px;
+}
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+    width: 100%;
+}
+.section1background{
+    background: rgba(var(--color3), 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 p {
-    font-family: Poppins;
+    font-family: Montserrat;
+    color: black;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 27.84px;
     text-align: left;
 }
@@ -46,13 +89,26 @@ h1 {
     font-weight: 600;
     line-height: 23.4px;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 h2 {
     font-family: Montserrat;
-    font-size: 88px;
+    font-size: 63px;
     font-weight: 800;
-    line-height: 105.6px;
+    line-height: 75.6px;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h3 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 80.4px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .red {
     color: rgba(var(--secondaycolor), 1);
@@ -60,10 +116,10 @@ h2 {
 .blue {
     color: rgba(var(--navycolor), 1);
 }
-#checkmark {
+.checkmark {
     font-family: Montserrat;
-    height: 88px;
-    width: 88px;
+    height: 60px;
+    width: 60px;
     text-align: left;
 }
 button{
@@ -80,9 +136,6 @@ button{
     color:#FFFFFF;
     border-radius: 5px;
 }
-img {
-    border-radius: 5px;
-}
 button:hover {
     background-image: linear-gradient(rgb(0 0 0 / 20%) 0 0);
 }
@@ -97,15 +150,9 @@ header {
     position: sticky;
     padding-bottom: 0px;
     margin: 0px;
-    width: 100%;
-}
-header img {
-    width: 90px;
-    height: 57px;
-    top: 30px;
-    left: 255px;
-    gap: 0px;
-    opacity: 0px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 header a {
     gap: 0px;
@@ -131,4 +178,147 @@ nav ul {
     flex-direction: row;
     gap: 50px;
     list-style-type: none;
+}
+#aboutpoints {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+#inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+#inputs input {
+    height: 64px;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.84px;
+}
+#issues {
+    display: none;
+}
+footer {
+    background-color: rgba(var(--navycolor), 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    text-align: left;
+    width: 80%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer img#logo {
+    background-color: white;
+    padding: 10px;
+}
+#footertext {
+    display: flex;
+    flex-direction: column;
+}
+.dropdowntext {
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: none;
+    padding: 40px;
+}
+.dropdownheader:after {
+    content: image-set("plus.png"); /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: rgba(var(--secondaycolor), 1);
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: image-set("minus.png"); /* Unicode character for "minus" sign (-) */
+}
+#concernsissues button:hover {
+    color: rgba(var(--navbuttonhover), 1);
+}
+.footerlinks {
+    font-family: Montserrat;
+    text-align: left;
+    width: 100%;
+}
+#footercolumns {
+    width: 100%;
+}
+#upperfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+footer hr {
+    border: 1px solid white;
+}
+footer a:hover {
+    background-clip: content-box;
+    color: rgba(var(--secondaycolor), 1);
+    text-decoration: underline;
+}
+footer a {
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21.45px;
+    text-decoration: none;
+}
+#contact li{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 21.45px;
+}
+#copyright{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+#copyright p {
+    font-size: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+}
+#socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#socialmediaicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+#socialmedia p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+#socialmedia img {
+    height: 15px;
+    width: 15px;
 }
