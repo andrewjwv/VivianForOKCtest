@@ -5,6 +5,7 @@
     <link rel="icon" href="./resources/vivian-jaber-logo.png">
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./stylesheets/navbardropdown.css">
     <meta charset="UTF-8">
     <title>Vivian Jaber for OKC Ward 1</title>
     <script type="application/ld+json">
@@ -20,26 +21,21 @@
     <meta name="google-site-verification" content="QAdhr9gCqTO2-LdzNZmEIMq-FNPM_l2IJPlEKTVcHi0" />
 </head>
 <body>
-    <header id="navbar">
+    <header id="navbar" class="topnavz">
         <div id="navimage">
             <a href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
         </div>
-        <nav id="navbtns">
-            <form method="get" id="donatebtn" action="#donate">
-                <button class="donate" type="submit">Donate Now</button>
-            </form>
-            <ul>
-                <li><a href="index.html" id="currentpage">Home</a></li>
-                <li><a href="#about">About</a></li><!--
-                <li><a href="event.html">Event</a></li>
-                <li><a href="page.html">Page</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            --><li><a href="#volunteernow">Contact</a></li>
-            </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id="navbtns" class="topnav">
+            <a href="index.html" id="currentpage">Home</a>
+            <a href="#about">About</a>
+            <a href="#volunteernow">Contact</a>
             <form method="get" id="navvolunbtn" action="#volunteernow">
                 <button class="joincampaign">Become a Volunteer</button>
             </form>
-        </div>
+        </nav>
     </header>
     <main>
         <section id="calltoaction" class="section1background">

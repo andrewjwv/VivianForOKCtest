@@ -142,7 +142,7 @@ button:hover {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background: #FFFFFF;
     padding-top: 10px;
@@ -170,8 +170,11 @@ header #currentpage {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 nav ul {
     display: flex;
