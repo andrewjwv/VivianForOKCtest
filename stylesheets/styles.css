@@ -16,6 +16,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+button {
+    text-decoration: none;
+}
 a {
     text-decoration: none;
 }
@@ -41,6 +44,8 @@ li {
 header img {
     width: 90px;
     height: 57px;
+    border-radius: 5px;
+    padding: 20px;
 }
 .points img {
     height: 90px;
@@ -110,17 +115,52 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+h4 {
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 60.4px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .red {
     color: rgba(var(--secondaycolor), 1);
 }
 .blue {
     color: rgba(var(--navycolor), 1);
 }
+.bluebackground {
+    background: rgba(var(--navycolor), 1);
+    color: white;
+}
+.redbackground {
+    background: rgba(var(--secondaycolor), 1);
+    color: white;
+}
 .checkmark {
     font-family: Montserrat;
     height: 60px;
     width: 60px;
     text-align: left;
+}
+.donate {
+    background-color: rgba(var(--navycolor), 1);
+}
+.dropdownheader {
+    color: white;
+}
+.dropdownheader:after {
+    color: white;
+}
+.dropdownheader:hover {
+    color: white;
+}
+.dropdownheader:hover:after {
+    color: white;
+}
+.dropdownheader:focus {
+    color: white;
 }
 button{
     padding: 10px;
@@ -135,6 +175,7 @@ button{
     background-color: rgba(var(--secondaycolor), 1);
     color:#FFFFFF;
     border-radius: 5px;
+    border: 2px solid white;
 }
 button:hover {
     background-image: linear-gradient(rgb(0 0 0 / 20%) 0 0);
@@ -146,6 +187,7 @@ header {
     align-items: center;
     background: #FFFFFF;
     padding-top: 10px;
+    gap: 15px;
     top: 0;
     position: sticky;
     padding-bottom: 0px;
@@ -167,14 +209,32 @@ header a {
 header #currentpage {
     color: rgba(var(--currentpage), 1);
 }
+header form {
+    width: auto;
+    display: flex;
+
+}
+#metabuttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+nav form button {
+    width: 100%;
+    padding-right: 20px;
 }
 nav ul {
     display: flex;
@@ -182,11 +242,23 @@ nav ul {
     gap: 50px;
     list-style-type: none;
 }
+#calltoactionbuttons button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 #aboutpoints {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
+}
+#volunteernow {
+    display: flex;
+    gap: 40px;
 }
 #inputs{
     display: flex;
@@ -196,6 +268,7 @@ nav ul {
     height: 100%;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 #inputs input {
     height: 64px;
@@ -205,9 +278,27 @@ nav ul {
     font-weight: 400;
     line-height: 27.84px;
 }
+#inputs button {
+    height: 64px;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 27.84px;
+}
+#concernsissuesdropdowns {
+    justify-content: space-evenly;
+    gap: 20px;
+}
+#collapsibles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 #issues {
     display: none;
 }
+
 footer {
     background-color: rgba(var(--navycolor), 1);
     color: white;
@@ -217,7 +308,6 @@ footer {
     justify-content:space-between;
     text-align: left;
     width: 80%;
-    border-radius: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 10%;
@@ -254,6 +344,22 @@ footer img#logo {
 }
 #concernsissues button:hover {
     color: rgba(var(--navbuttonhover), 1);
+}
+#donate {
+    display: flex;
+    gap: 20px;
+}
+#donate * {
+    color: white;
+}
+#donateform {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .footerlinks {
     font-family: Montserrat;
@@ -325,3 +431,149 @@ footer a {
     height: 15px;
     width: 15px;
 }
+
+
+@media (min-width:320px) { 
+    #calltoactionpicture img {
+        height: 341px;
+        width:300px;
+    }
+    #concernspicture img {
+        height: 284px;
+        width: 300px;
+    }
+    #volunteernow img {
+        height: 401px;
+        width: 300px;
+    }
+    #footercolumns img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    
+}
+/* Extra small devices */
+@media only screen and (min-width: 480px) {
+    #calltoactionpicture img {
+        height: 523px;
+        width:460px;
+    }
+    #concernspicture img {
+        height: 436px;
+        width: 460px;
+    }
+    #volunteernow img {
+        height: 614px;
+        width: 460px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    #calltoactionpicture img {
+        height: 660px;
+        width:580px;
+    }
+    #concernspicture img {
+        height: 550px;
+        width: 580px;
+    }
+    
+    #volunteernow img {
+        height: 774px;
+        width: 580px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    #volunteernow img {
+        height: 999px;
+        width: 748px;
+    }
+    #concernspicture img {
+        height: 709px;
+        width: 748px;
+    }
+    #calltoactionpicture img {
+        height: 851px;
+        width:748px;
+    }
+    img#logo {
+        width: 100px;
+        height: 80px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+    #calltoactionpicture img {
+        height: 523px;
+        width:460px;
+    }
+    #concernspicture img {
+        height: 436px;
+        width: 460px;
+    }
+    #volunteernow img {
+        height: 614px;
+        width: 460px;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 70px;
+    }
+    #aboutpicture img {
+        display: block;
+        height: 690px;
+        width: 460px;
+    }
+    #calltoactiontext {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%
+    }
+    #abouttextandpoints {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+    #calltoactionpicture img {
+        height: 660px;
+        width:580px;
+    }
+    #concernspicture img {
+        height: 550px;
+        width: 580px;
+    }
+    #volunteernow img {
+        height: 774px;
+        width: 580px;
+    }
+    #aboutpicture img {
+        height: 870px;
+        width: 580px;
+    }
+    #donate {
+        width: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 50px;
+    }
+    section {
+        padding-right: calc(15px + (100vw - 1200px) * (15 - 30) / (1200 -  1250));
+    }
+}*/

@@ -22,16 +22,21 @@
 </head>
 <body>
     <header id="navbar" class="topnavz">
-        <div id="navimage">
-            <a href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+        <div id ="metabuttons">
+            <div id="navimage">
+                <a href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form method="get" id="navvolunbtn" action="#donate">
+                <button class="joincampaign bluebackground">Donate Now</button>
+            </form>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
         <nav id="navbtns" class="topnav">
             <a href="index.html" id="currentpage">Home</a>
             <a href="#about">About</a>
-            <a href="#volunteernow">Contact</a>
+            <a href="#footercolumns">Contact</a>
             <form method="get" id="navvolunbtn" action="#volunteernow">
                 <button class="joincampaign">Become a Volunteer</button>
             </form>
@@ -115,7 +120,6 @@
                             activeCollapsible.classList.remove("active");
                             var activeContent = activeCollapsible.nextElementSibling;
                             activeContent.style.maxHeight = null;
-                            activeCollapsible.style.color = "#00008C";
                             activeContent.style.border = "none";
                             activeContent.style.padding = "0px";
                             activeContent.style.display = "none";
@@ -125,7 +129,6 @@
                         var content = this.nextElementSibling;
                         if (content.style.maxHeight){
                             content.style.maxHeight = null;
-                            this.style.color = "#00008C";
                             content.style.border = "none";
                             content.style.border = "none";
                             content.style.padding = "0px";
@@ -133,21 +136,20 @@
                         } else {
                             content.style.display = "inline-block";
                             content.style.padding = "30px";
-                            content.style.maxHeight = content.scrollHeight + "px";
-                            this.style.color = "#EF3D65";
+                            content.style.maxHeight = content.scrollHeight + "px"
                             content.style.border = "1px solid rgba(0, 0, 140, 1)";
                         }
                     });
                 }
             </script>
         </section>
-        <section id="volunteernow">
+        <section id="volunteernow" class="bluebackground">
             <div id="volunteertxt" class="subsection">
                 <div id="volunteertext" >
-                    <p>SIGN UP TO VOLUNTEER TODAY.</p>
+                    <h1>SIGN UP TO VOLUNTEER TODAY.</h1>
                 </div>
                 <div id="volunteerheader">
-                    <p>Vivian Can't Win Without You On This Team.</p>
+                    <h4>Vivian Can't Win Without You On This Team.</h4>
                 </div>
                 <div id="volunteerform">
                     <form id="emailform" onsubmit="sendVolunteerEmail();return false;">
@@ -166,9 +168,9 @@
                 <img src="./resources/vivian-jaber-photo3.jpg" >
             </div>
         </section>
-        <section id="donate" >
+        <section id="donate" class="redbackground">
             <div id="donatetxt">
-                <p id="donateheader">Contribute Now!</p>
+                <h4 id="donateheader">Contribute Now!</h4>
                 <p id="donateparagraph">Vivian Jaber brings valuable leadership to the City Council. Your support can help her continue making a positive impact for our community. Consider contributing to her campaign today!</p>
             </div>
             <div id="donateform">
@@ -190,7 +192,7 @@
                         <ul>
                             <li><a class="footerlinks" href="#about">About Me</a></li><!--
                             <li><a href="team.html">Our Team</a></li>
-                        --><li><a class="footerlinks" href="#volunteernow">Issues</a></li><!--
+                        --><li><a class="footerlinks" href="#concernissues">Priorities</a></li><!--
                             <li><a href="bio.html">Biography</a></li>
                         --></ul>
                     </div>

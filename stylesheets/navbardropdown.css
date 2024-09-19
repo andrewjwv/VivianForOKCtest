@@ -13,7 +13,7 @@
 
   
   /* Hide the link that should open and close the topnav on small screens */
-  #navbtns .icon {
+ .icon {
     display: none;
   }
    /* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -23,20 +23,15 @@
     #navbtns {
       display: none;
     }
-    #navbtns a.icon {
+    .icon {
       float: right;
-      display: block;
+      display: flex;
     }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 850px) {
     #navbtns.responsive {position: relative;}
-    #navbtns.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
     #navbtns.responsive a {
       float: none;
       display: block;
@@ -59,8 +54,6 @@
     }
     #navbar.responsive a {
         color: white;
-        border-radius: 5px;
-        padding: 20px;
     }
     #navbar.responsive img {
         background-color: white;
@@ -78,6 +71,10 @@
         padding-bottom: 20px; 
         height: 80%;
         background-color: rgba(var(--navycolor), 1);
+    }
+    header {
+      display: flex;
+      flex-direction: column;
     }
 
   } 
