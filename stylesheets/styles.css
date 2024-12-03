@@ -450,11 +450,11 @@ footer a {
         width:300px;
     }
     #concernspicture img {
-        height: 284px;
+        height: 450px;
         width: 300px;
     }
     #volunteernow img {
-        height: 401px;
+        height: 450px;
         width: 300px;
     }
     #footercolumns img {
@@ -471,11 +471,11 @@ footer a {
         width:460px;
     }
     #concernspicture img {
-        height: 436px;
+        height: 690px;
         width: 460px;
     }
     #volunteernow img {
-        height: 614px;
+        height: 690px;
         width: 460px;
     }
 }
@@ -487,12 +487,12 @@ footer a {
         width:580px;
     }
     #concernspicture img {
-        height: 550px;
+        height: 870px;
         width: 580px;
     }
     
     #volunteernow img {
-        height: 774px;
+        height: 870px;
         width: 580px;
     }
     
@@ -501,11 +501,11 @@ footer a {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px){
     #volunteernow img {
-        height: 999px;
+        height: 1121px;
         width: 748px;
     }
     #concernspicture img {
-        height: 709px;
+        height: 1121px;
         width: 748px;
     }
     #calltoactionpicture img {
@@ -526,11 +526,11 @@ footer a {
         width:460px;
     }
     #concernspicture img {
-        height: 436px;
+        height: 689px;
         width: 460px;
     }
     #volunteernow img {
-        height: 614px;
+        height: 689px;
         width: 460px;
     }
     section {
