@@ -89,58 +89,58 @@
         </section>
         <section id="concernissues" class="section1background">
             <div id="concernsissuesdropdowns">
-                <div id="concernsheadertxt">
-                    <h1 class="red">Priorities and Issues</h1>
-                    <h2 class="blue">Top Issues</h2>
-                </div>
-                <div id="collapsibles">
-                    <button class="dropdownheader">Housing As Human Right</button><!--
+            <div id="concernsheadertxt">
+                <h1 class="red">Priorities and Issues</h1>
+                <h2 class="blue">Top Issues</h2>
+            </div>
+            <div id="collapsibles">
+                <button class="dropdownheader">Housing As Human Right</button><!--
             -->     <p class="dropdowntext">The apparent health and strength of any community can be evidenced by the presence of an unhoused population, and the 2024 Point of Time Count shows Oklahoma City to be failing in that regard. I desire to see a community where all people have their most basic needs met, and we can make that a reality in Oklahoma City. Safe, affordable housing is essential to an individual's wellbeing and enables them to access education, employment, and healthcare. With sustained access to these resources, the cycle of poverty breaks and communities can thrive as a result.</p>
-                    <button class="dropdownheader">Public Safety</button><!--
+                <button class="dropdownheader">Public Safety</button><!--
             -->     <p class="dropdowntext">Obtaining real public safety in our community does not need to rely so heavily on the police. Instead, we can address the root causes of crime through comprehensive support and resources. After school programs, mental health resources, and programs that address food insecurity are great places to start. After school programs provide safe spaces for youth to have fun, continue their learning, and cut loose. Increased access to mental health resources reduces crime rates by helping individuals cope with trauma and stress. Addressing food insecurity ensures that basic needs are met and prevents acts of desperation. These measures make up a community-first approach to making OKC a safer city.</p>
-                    <button class="dropdownheader">Investment in Infrastructure</button><!--
+                <button class="dropdownheader">Investment in Infrastructure</button><!--
             -->     <p class="dropdowntext">Investing in bike lanes, sidewalks, and expanded bus routes is crucial for creating vibrant, accessible communities. These improvements promote safer, healthier, and more sustainable communities by reducing both traffic congestion and pollution. It also ensures that all residents, regardless of income or ability, can move freely and safely. If we want to decrease unemployment in Oklahoma City, we need a way for people to get those jobs. If we want to reduce feelings of loneliness and isolation in ourselves and others, we need a better way to get to see each other. Prioritizing these investments reflects a commitment to equitable urban development and a higher quality of life for everyone.</p>
-                    <button class="dropdownheader">Childcare</button><!--
+                <button class="dropdownheader">Childcare</button><!--
             -->     <p class="dropdowntext">A recent survey by The Oklahoma Partnership for School Readiness revealed that sixty-eight percent of the population in the state of Oklahoma live in a childcare desert, costing the state $1.2 billion each year. Beyond being just a personal issue, the lack of childcare holds us back as a state and stagnates our growth. It also keeps women out of the workforce and keeps low-income families in cycles of poverty. Investing in safe and affordable childcare puts more money back into the hands of families, empowers women, and leads to stronger communities.</p>
-                </div>
+            </div>
             </div>
             <div id="concernspicture">
                 <img src="./resources/vivian-jaber-photo2.jpg">
             </div>
             <script>
-                var coll = document.getElementsByClassName("dropdownheader");
-                var i;
-                var coll = document.getElementsByClassName("dropdownheader");
+            var i;
+            var coll = document.getElementsByClassName("dropdownheader");
 
-                for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                        // Collapse any active collapsible
-                        var activeCollapsible = document.querySelector(".active");
-                        if (activeCollapsible && activeCollapsible !== this) {
-                            activeCollapsible.classList.remove("active");
-                            var activeContent = activeCollapsible.nextElementSibling;
-                            activeContent.style.maxHeight = null;
-                            activeContent.style.border = "none";
-                            activeContent.style.padding = "0px";
-                            activeContent.style.display = "none";
-                        }
-
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.maxHeight){
-                            content.style.maxHeight = null;
-                            content.style.border = "none";
-                            content.style.border = "none";
-                            content.style.padding = "0px";
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "inline-block";
-                            content.style.padding = "30px";
-                            content.style.maxHeight = content.scrollHeight + "px"
-                            content.style.border = "1px solid rgba(0, 0, 140, 1)";
-                        }
-                    });
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                // Collapse any active collapsible
+                var activeCollapsible = document.querySelector(".active");
+                if (activeCollapsible && activeCollapsible !== this) {
+                    activeCollapsible.classList.remove("active");
+                    var activeContent = activeCollapsible.nextElementSibling;
+                    activeContent.style.maxHeight = null;
+                    activeContent.style.border = "none";
+                    activeContent.style.padding = "0px";
+                    activeContent.style.display = "none";
                 }
+
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.transition = "max-height 0.5s ease-out";
+                    content.style.maxHeight = null;
+                    content.style.border = "none";
+                    content.style.padding = "0px";
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "inline-block";
+                    content.style.padding = "30px";
+                    content.style.maxHeight = content.scrollHeight + "px"
+                    content.style.border = "1px solid rgba(0, 0, 140, 1)";
+                    content.style.transition = "max-height 0.5s ease-in";
+                }
+                });
+            }
             </script>
         </section>
         <section id="volunteernow" class="bluebackground">
