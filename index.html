@@ -2,59 +2,54 @@
 <html lang="en" >
 <head>
     
-    <link rel="icon" href="vivian-jaber-logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./resources/vivian-jaber-logo.png">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./stylesheets/navbardropdown.css">
     <meta charset="UTF-8">
     <title>Vivian Jaber for OKC Ward 1</title>
     <script type="application/ld+json">
         {
-          "@context" : "https://schema.org",
-          "@type" : "WebSite",
-          "name" : "Vivian Jaber for OKC Ward 1",
-          "url" : "https://vivianforokc.com/"
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "Vivian Jaber for OKC Ward 1",
+            "url" : "https://vivianforokc.com/"
         }
-      </script>
-    <script src="scripts.js"></script>
+    </script>
+    <script src="./scripts/scripts.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="google-site-verification" content="QAdhr9gCqTO2-LdzNZmEIMq-FNPM_l2IJPlEKTVcHi0" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="navbar" class="topnavz">
+        <div id ="metabuttons">
             <div id="navimage">
-                <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+                <a href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
             </div>
-            <div id="navbtns" class="topnav">
-                <div id="donatebtn">
-                    <form method="get" action="#donatesct">
-                        <button class="donate" type="submit">Donate Now</button>
-                    </form>
-                </div>
-                <ul>
-                    <li><a href="index.html" id="currentpage">Home</a></li>
-                    <li><a href="#about">About</a></li><!--
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="page.html">Page</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                --><li><a href="#volunteernow">Contact</a></li>
-                </ul>
-                <div id="assist">
-                    <form method="get" id="navvolunbtn" action="#volunteernow">
-                        <button class="joincampaign">Become a Volunteer</button>
-                    </form>
-                </div>
-            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form method="get" id="navvolunbtn" action="#donate">
+                <button class="joincampaign bluebackground">Donate Now</button>
+            </form>
+        </div>
+        <nav id="navbtns" class="topnav">
+            <a href="index.html" id="currentpage">Home</a>
+            <a href="#about">About</a>
+            <a href="#footercolumns">Contact</a>
+            <form method="get" id="navvolunbtn" action="#volunteernow">
+                <button class="joincampaign">Become a Volunteer</button>
+            </form>
         </nav>
     </header>
     <main>
-        <div id="calltoaction">
-            <div id="calltoactiontext">
-                <p class="smallred" id="voteforfuture">Vote For Progress</p>
-                <p id="winwithvivian">Win with Vivian 
-                    <img id="checkmark" src="checkmark.png" alt="">
-                </p>
-                <p class="smallparagraph">Vivian Jaber is running for City Council in the Ward 1 2025 election. She is a strong believer in the power of the people and an advocate for social justice.</p>
+        <section id="calltoaction" class="section1background">
+            <div id="calltoactiontext" class="subsection">
+                <h1 class="red" id="voteforfuture">Vote For Progress</h1>
+                <h2 class="blue" id="winwithvivian">Win with Vivian 
+                    <img class="checkmark" src="./resources/checkmark.png" alt="">
+                </h2>
+                <p>Vivian Jaber is running for City Council in the Ward 1 2025 election. She is a strong believer in the power of the people and an advocate for social justice.</p>
                 <div id="calltoactionbuttons">
                     <form id="calltoactionform" method="get" action="#volunteernow">
                         <button class="joincampaign">Join Campaign</button>
@@ -62,119 +57,99 @@
                     </form>
                 </div>
             </div>
-            <div id="calltoactionpicture">
-                <img src="vivian-jaber-photo4.jpg" >
+            <div id="calltoactionpicture" class="subsection">
+                <img src="./resources/vivian-jaber-photo4.jpg" >
             </div>
-        </div>
-        <div id="about">
-            <div id="aboutpicture">
-                <img src="vivian-jaber-photo1.jpg" >
+        </section>
+        <section id="about">
+            <div id="aboutpicture" class="subsection">
+                <img src="./resources/vivian-jaber-photo1.jpg" >
             </div>
-            <div id="abouttextandpoints">    
+            <div id="abouttextandpoints" class="subsection">    
                 <div id ="abouttext">
-                    <p class="smallred">About Vivian</p>
-                    <p class="blueheader">Leadership.</p> <p class="blueheader">Experience.</p> <p class="blueheader">Vision.</p>
+                    <h1 class="red">About Vivian</h1>
+                    <h3 class="blue">Leadership.<br>Experience.<br>Vision.</h3>
                     <p class="smallparagraph">Vivian is a resilient community advocate dedicated to uplifting her community. As a devoted mother of two, Vivian balances her family responsibilities with community organizing, a nonprofit career, and MBA studies at the University of Oklahoma. As a Palestinian Muslim woman married to a Latino man, she is deeply entrenched in the struggles of marginalized communities. Finally, her BA in Political Science and expertise in Public Policy & Management empower her to speak truth to power and advocate for the voiceless.</p>
                 </div>
                 <div id="aboutpoints">
                     <div class="points">
-                        <img src="point1.png" alt="">
-                        <p>BA in </p><p>Political Science</p>
-                        <img src="point3.png" alt="">
-                        <p>Community </p><p>Organizer</p>
+                        <img src="./resources/point1.png" alt="">
+                        <p>BA in Political <br>Science</p>
+                        <img src="./resources/point3.png" alt="">
+                        <p>Community <br>Organizer</p>
                     </div>
                     <div class="points">
-                        <img src="point2.png" alt="">
-                        <p>MBA </p><p>Student</p>
-                        <img src="point4.png" alt="">
-                        <p>Experienced</p><p> Leader</p>
+                        <img src="./resources/point2.png" alt="">
+                        <p>MBA <br>Student</p>
+                        <img src="./resources/point4.png" alt="">
+                        <p>Experienced<br> Leader</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="mvconcernissues">
-            <!--<div id="missionandvision">
-                <p class="smallred">Our Mission</p>
-                <p class="blueheader">A Better World Is Possible</p>
-                <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                <div id="missionvisionpoints">
-                    <div class="missionpoints roundedbox">
-                        <p class="miniheader">Mission</p>
-                        <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                        <a class="arrowtext" href="about.html">Learn More <img src="redarrow.png"></a>
-                    </div>
-                    <div class="visionpoints roundedbox">
-                        <p class="miniheader">Vision</p>
-                        <p class="smallparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit arcu, bibendum id massa quis, facilisis imperdiet magna. Sed maximus, mauris quis cursus sagittis, justo turpis vulputate diam, quis sodales nunc dui sit amet dolor. Donec tempor porttitor hendrerit. Etiam nisi velit, pharetra non tortor sit amet, elementum consequat ex. Proin quis iaculis est. Phasellus sodales ante enim</p>
-                        <a class="arrowtext" href="about.html">Learn More<img src="whitearrow.png"></a>
-                    </div>
-                </div>
-            </div>-->
-            <div id="ConcernsIssues">
-                <div id="concernsheadertxt">
-                    <p class="smallred">Priorities and Issues</p>
-                    <p class="blueheader">Top Issues</p>
-                </div>
-                <div id="collapsibles">
-                    <button class="DropDownHeader">Housing As Human Right</button><!--
-            -->     <p class="DropDownText smallparagraph">The apparent health and strength of any community can be evidenced by the presence of an unhoused population, and the 2024 Point of Time Count shows Oklahoma City to be failing in that regard. I desire to see a community where all people have their most basic needs met, and we can make that a reality in Oklahoma City. Safe, affordable housing is essential to an individual's wellbeing and enables them to access education, employment, and healthcare. With sustained access to these resources, the cycle of poverty breaks and communities can thrive as a result.</p>
-                    <button class="DropDownHeader">Public Safety</button><!--
-            -->     <p class="DropDownText smallparagraph">Obtaining real public safety in our community does not need to rely so heavily on the police. Instead, we can address the root causes of crime through comprehensive support and resources. After school programs, mental health resources, and programs that address food insecurity are great places to start. After school programs provide safe spaces for youth to have fun, continue their learning, and cut loose. Increased access to mental health resources reduces crime rates by helping individuals cope with trauma and stress. Addressing food insecurity ensures that basic needs are met and prevents acts of desperation. These measures make up a community-first approach to making OKC a safer city.</p>
-                    <button class="DropDownHeader">Investment in Infrastructure</button><!--
-            -->     <p class="DropDownText smallparagraph">Investing in bike lanes, sidewalks, and expanded bus routes is crucial for creating vibrant, accessible communities. These improvements promote safer, healthier, and more sustainable communities by reducing both traffic congestion and pollution. It also ensures that all residents, regardless of income or ability, can move freely and safely. If we want to decrease unemployment in Oklahoma City, we need a way for people to get those jobs. If we want to reduce feelings of loneliness and isolation in ourselves and others, we need a better way to get to see each other. Prioritizing these investments reflects a commitment to equitable urban development and a higher quality of life for everyone.</p>
-                    <button class="DropDownHeader">Childcare</button><!--
-            -->     <p class="DropDownText smallparagraph">A recent survey by The Oklahoma Partnership for School Readiness revealed that sixty-eight percent of the population in the state of Oklahoma live in a childcare desert, costing the state $1.2 billion each year. Beyond being just a personal issue, the lack of childcare holds us back as a state and stagnates our growth. It also keeps women out of the workforce and keeps low-income families in cycles of poverty. Investing in safe and affordable childcare puts more money back into the hands of families, empowers women, and leads to stronger communities.</p>
-                </div>
+        </section>
+        <section id="concernissues" class="section1background">
+            <div id="concernsissuesdropdowns">
+            <div id="concernsheadertxt">
+                <h1 class="red">Priorities and Issues</h1>
+                <h2 class="blue">Top Issues</h2>
+            </div>
+            <div id="collapsibles">
+                <button class="dropdownheader">Housing As Human Right</button><!--
+            -->     <p class="dropdowntext">The apparent health and strength of any community can be evidenced by the presence of an unhoused population, and the 2024 Point of Time Count shows Oklahoma City to be failing in that regard. I desire to see a community where all people have their most basic needs met, and we can make that a reality in Oklahoma City. Safe, affordable housing is essential to an individual's wellbeing and enables them to access education, employment, and healthcare. With sustained access to these resources, the cycle of poverty breaks and communities can thrive as a result.</p>
+                <button class="dropdownheader">Public Safety</button><!--
+            -->     <p class="dropdowntext">Obtaining real public safety in our community does not need to rely so heavily on the police. Instead, we can address the root causes of crime through comprehensive support and resources. After school programs, mental health resources, and programs that address food insecurity are great places to start. After school programs provide safe spaces for youth to have fun, continue their learning, and cut loose. Increased access to mental health resources reduces crime rates by helping individuals cope with trauma and stress. Addressing food insecurity ensures that basic needs are met and prevents acts of desperation. These measures make up a community-first approach to making OKC a safer city.</p>
+                <button class="dropdownheader">Investment in Infrastructure</button><!--
+            -->     <p class="dropdowntext">Investing in bike lanes, sidewalks, and expanded bus routes is crucial for creating vibrant, accessible communities. These improvements promote safer, healthier, and more sustainable communities by reducing both traffic congestion and pollution. It also ensures that all residents, regardless of income or ability, can move freely and safely. If we want to decrease unemployment in Oklahoma City, we need a way for people to get those jobs. If we want to reduce feelings of loneliness and isolation in ourselves and others, we need a better way to get to see each other. Prioritizing these investments reflects a commitment to equitable urban development and a higher quality of life for everyone.</p>
+                <button class="dropdownheader">Childcare</button><!--
+            -->     <p class="dropdowntext">A recent survey by The Oklahoma Partnership for School Readiness revealed that sixty-eight percent of the population in the state of Oklahoma live in a childcare desert, costing the state $1.2 billion each year. Beyond being just a personal issue, the lack of childcare holds us back as a state and stagnates our growth. It also keeps women out of the workforce and keeps low-income families in cycles of poverty. Investing in safe and affordable childcare puts more money back into the hands of families, empowers women, and leads to stronger communities.</p>
+            </div>
             </div>
             <div id="concernspicture">
-                <img src="vivian-jaber-photo2.jpg">
+                <img src="./resources/vivian-jaber-photo2.jpg">
             </div>
             <script>
-                var coll = document.getElementsByClassName("DropDownHeader");
-                var i;
-                var coll = document.getElementsByClassName("DropDownHeader");
+            var i;
+            var coll = document.getElementsByClassName("dropdownheader");
 
-                for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                        // Collapse any active collapsible
-                        var activeCollapsible = document.querySelector(".active");
-                        if (activeCollapsible && activeCollapsible !== this) {
-                            activeCollapsible.classList.remove("active");
-                            var activeContent = activeCollapsible.nextElementSibling;
-                            activeContent.style.maxHeight = null;
-                            activeCollapsible.style.color = "#00008C";
-                            activeContent.style.border = "none";
-                            activeContent.style.padding = "0px";
-                            activeContent.style.display = "none";
-                        }
-
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.maxHeight){
-                            content.style.maxHeight = null;
-                            this.style.color = "#00008C";
-                            content.style.border = "none";
-                            content.style.border = "none";
-                            content.style.padding = "0px";
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "inline-block";
-                            content.style.padding = "30px";
-                            content.style.maxHeight = content.scrollHeight + "px";
-                            this.style.color = "#EF3D65";
-                            content.style.border = "1px solid rgba(0, 0, 140, 1)";
-                        }
-                    });
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                // Collapse any active collapsible
+                var activeCollapsible = document.querySelector(".active");
+                if (activeCollapsible && activeCollapsible !== this) {
+                    activeCollapsible.classList.remove("active");
+                    var activeContent = activeCollapsible.nextElementSibling;
+                    activeContent.style.maxHeight = null;
+                    activeContent.style.border = "none";
+                    activeContent.style.padding = "0px";
+                    activeContent.style.display = "none";
                 }
+
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.transition = "max-height 0.5s ease-out";
+                    content.style.maxHeight = null;
+                    content.style.border = "none";
+                    content.style.padding = "0px";
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "inline-block";
+                    content.style.padding = "30px";
+                    content.style.maxHeight = content.scrollHeight + "px"
+                    content.style.border = "1px solid rgba(0, 0, 140, 1)";
+                    content.style.transition = "max-height 0.5s ease-in";
+                }
+                });
+            }
             </script>
-        </div>
-        <section id="volunteernow">
-            <div id="volunteertxt">
+        </section>
+        <section id="volunteernow" class="bluebackground">
+            <div id="volunteertxt" class="subsection">
                 <div id="volunteertext" >
-                    <p>SIGN UP TO VOLUNTEER TODAY.</p>
+                    <h1>SIGN UP TO VOLUNTEER TODAY.</h1>
                 </div>
                 <div id="volunteerheader">
-                    <p>Vivian Can't Win Without You On This Team.</p>
+                    <h4>Vivian Can't Win Without You On This Team.</h4>
                 </div>
                 <div id="volunteerform">
                     <form id="emailform" onsubmit="sendVolunteerEmail();return false;">
@@ -187,46 +162,42 @@
                         </div>
                     </form>
                 </div>
-<!--                <script>
-                    
-                </script>-->
+
             </div>
-            <div id="volunteerpic">
-                <img src="vivian-jaber-photo3.jpg" >
+            <div id="volunteerpic" class="subsection">
+                <img src="./resources/vivian-jaber-photo3.jpg" >
             </div>
         </section>
-        <section id="donatesct">
-            <div id="donate">
-                <div id="donatetxt">
-                    <p id="donateheader">Contribute Now!</p>
-                    <p id="donateparagraph">Vivian Jaber brings valuable leadership to the City Council. Your support can help her continue making a positive impact for our community. Consider contributing to her campaign today!</p>
-                </div>
-                <div id="donateform">
-                    <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=5" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$5</a>
-                    <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=15" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$15</a>
-                    <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=25" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$25</a>
-                    <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=50" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$50</a>
-                    <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">other</a>
+        <section id="donate" class="redbackground">
+            <div id="donatetxt">
+                <h4 id="donateheader">Contribute Now!</h4>
+                <p id="donateparagraph">Vivian Jaber brings valuable leadership to the City Council. Your support can help her continue making a positive impact for our community. Consider contributing to her campaign today!</p>
             </div>
-        </section>
+            <div id="donateform">
+                <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=5" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$5</a>
+                <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=15" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$15</a>
+                <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=25" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$25</a>
+                <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o&amp;amount=50" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">$50</a>
+                <a class="dbox-donation-page-button" href="https://donorbox.org/vivian-for-okc?default_interval=o" style="background: rgb(0, 0, 114); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; font-size: 16px; padding: 8px 24px; border-radius: 5px; gap: 8px; width: fit-content; line-height: 24px;"><img src="https://donorbox.org/images/white_logo.svg" style="display: none;">other</a>
+            </section>
     </main>
     <footer>
-        <div id="footer">
-            <div id="FooterColumns">
-                <a href="index.html"><img src="vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
-                <div id="FooterText">
-                    <div id="QuickLinks">
-                        <p class="smallred">Quick Links</p>
+        <div id="footercolumns">
+            <div id="upperfooter">
+                <a href="index.html"><img id="logo" src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+                <div id="footertext">
+                    <div id="quicklinks">
+                        <h1 class="red">Quick Links</h1>
                         <hr>
                         <ul>
-                            <li><a href="#about">About Me</a></li><!--
+                            <li><a class="footerlinks" href="#about">About Me</a></li><!--
                             <li><a href="team.html">Our Team</a></li>
-                        --><li><a href="#volunteernow">Issues</a></li><!--
+                        --><li><a class="footerlinks" href="#concernissues">Priorities</a></li><!--
                             <li><a href="bio.html">Biography</a></li>
                         --></ul>
                     </div>
-                    <div id="Issues">
-                        <p class="smallred">Issues</p>
+                    <div id="issues">
+                        <h1 class="red">Issues</h1>
                         <hr>
                         <ul>
                             <li><a href="housing.html">Housing As Human Right</a></li>
@@ -234,26 +205,26 @@
                             <li><a href="covid.html">Investment in Infrastructure</a></li>
                             <li><a href="education.html">Childcare</a></li>
                     </div>
-                    <div id="Contact">
-                        <p class="smallred">Contact Us</p>
+                    <div id="contact">
+                        <h1 class="red">Contact Us</h1>
                         <hr>
                         <ul><!--
                             <li> Address</li>
-                        --><li> contact@vivianforokc.com</li><!--
+                        --><li class="footerlinks"> contact@vivianforokc.com</li><!--
                             <li> 405-555-5555</li>
                         --></ul>
                     </div>
                 </div>
             </div>
-            <div id="copyright">
-                <hr>
-                <div id="socialmedia">
-                    <p>&copy; 2024 Paid for by Vivian For OKC</p>
-                    <div id="socialmediaicons">
-                        <a href="https://www.facebook.com/vivianforokc"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="https://www.instagram.com/vivianforokc/"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="https://www.linkedin.com/in/vivian-jaber-velasquez-590b5a132/"><img src="linkedin.png" alt="Linkedin"></a>
-                    </div>
+        </div>
+        <div id="copyright">
+            <hr>
+            <div id="socialmedia">
+                <p>&copy; 2024 Paid for by Vivian For OKC</p>
+                <div id="socialmediaicons">
+                    <a href="https://www.facebook.com/vivianforokc"><img src="./resources/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/vivianforokc/"><img src="./resources/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/vivian-jaber-velasquez-590b5a132/"><img src="./resources/linkedin.png" alt="Linkedin"></a>
                 </div>
             </div>
         </div>
