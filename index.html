@@ -22,25 +22,31 @@
 </head>
 <body>
     <header class="navbar navbar-expand-lg bg-body-tertiary"  >
-        <div id ="metabuttons">
-            <div id="navimage">
-                <a href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+        <div class= "container-fluid" id ="metabuttons">
+            <a class = "navbar-brand" id = "navimage" href="index.html"><img src="./resources/vivian-jaber-logo.png" alt="Vivian Jaber Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#footercolumns">Contact</a>
+                    </li>
+                    <form class="d-flex" method="get" action="#volunteernow">
+                        <button class="btn btn-outline-success">Volunteer</button>
+                    </form>
+                </ul>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>    
-            <form method="get" id="navvolunbtn" action="#donate">
-                <button class="joincampaign bluebackground">Donate Now</button>
+            <form class="d-flex" method="get" action="#donate">
+                <button class="btn btn-outline-success">Donate</button>
             </form>
         </div>
-        <nav id="navbtns" class="topnav">
-            <a href="index.html" id="currentpage">Home</a>
-            <a href="#about">About</a>
-            <a href="#footercolumns">Contact</a>
-            <form method="get" id="navvolunbtn" action="#volunteernow">
-                <button class="joincampaign">Become a Volunteer</button>
-            </form>
-        </nav>
     </header>
     <main>
         <section id="calltoaction" class="section1background">
